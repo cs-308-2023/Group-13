@@ -5,7 +5,7 @@ int factorial(int n)
 {
   if(n<1) 
     {
-      std::cout<<"Incorrect Input \n Please re enter the number \n";
+      return -1;
     }
   if(n!=1)
     {
