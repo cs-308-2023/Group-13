@@ -18,3 +18,19 @@ int findgcd (int a, int b)
   
   return ans;
 }
+
+int rec (int a, int b, int c)
+{
+  if (a%c == 0 && b%c == 0)
+    return c;
+  else
+    return rec (a, b, c);
+}
+
+int GCDrec (int a, int b)
+{
+  if(a<b)
+    return rec (a, b, a);
+  else
+    return rec (a, b, b);
+}
