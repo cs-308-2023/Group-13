@@ -24,7 +24,7 @@ int rec (int a, int b, int c)
   if (a%c == 0 && b%c == 0)
     return c;
   else
-    return rec (a, b, c);
+    return rec (a, b, c-1);
 }
 
 int GCDrec (int a, int b)

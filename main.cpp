@@ -8,6 +8,7 @@ int main(){
     
     int x = 56;
     int y = 98;
-    cout<<"The gcd of 56 and 98 is"<<findgcd(x, y)<<endl;
+    cout<<"The gcd of 56 and 98 is "<<findgcd(x, y)<<endl;
+    cout<<"The same result through recursion "<<GCDrec(x, y)<<endl;
     return 0;
 }
